@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22f9d3049747ab46b9272efcc195031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SocketFunc
-  ani: {fileID: 0}
+  ani: {fileID: 862655372}
 --- !u!4 &450500799
 Transform:
   m_ObjectHideFlags: 0
