@@ -15,12 +15,11 @@ public class SocketFunc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L) && delay <= 0)
-        {
-            ani.SetTrigger("Use");
-            delay = delay_time;
-        }
-
+        // if (Input.GetKeyDown(KeyCode.L) && delay <= 0)
+        // {
+        //     ani.SetTrigger("Use");
+        //     delay = delay_time;
+        // }
         if (delay > 0)
         {
             delay -= Time.deltaTime;
@@ -43,9 +42,11 @@ public class SocketFunc : MonoBehaviour
 
     public void TestActivate(ActivateEventArgs args)
     {
-        GameObject socketedObject = args.interactableObject.transform.gameObject;
-
-        Debug.Log("ACT: " + socketedObject);
+        if (delay <= 0)
+        {
+            ani.SetTrigger("Use");
+            delay = delay_time;
+        }
     }    
     
     public void TestDeactivate(DeactivateEventArgs args)
