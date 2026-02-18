@@ -24,7 +24,7 @@ public class BackpackSocket : MonoBehaviour, IXRSelectFilter, IXRHoverFilter
 
     TMP_Text todo_list_text;
 
-    string default_text = "\nRemember to put items\nin bag before you go!\n\n";
+    string default_text = "\nRemember to put items\nin bag before you go!\n\n(Activate bag to put\nstuff in)\n\n";
 
     Animator door_ani;
 
